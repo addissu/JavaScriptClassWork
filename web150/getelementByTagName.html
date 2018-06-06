@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/c05.css">
+    </head>
+    <body>
+      
+        <h3>Get Element By last Name</h3>
+        <div id="page">List </div>
+        <h2>Buy groceries</h2>
+        <ul>
+            <li id="one" class="hot"><em>Fresh</em> Figs</li>
+           <li id="two" class="hot">Pine nuts</li>
+            <li id="three" class="hot">Honey</li>
+            <li id="four"  >Balsomic vineger</li>
+
+        
+        </ul>
+                
+        
+        
+       <script>
+            var elements = document.GetElementByTagName('li');//find all li's
+           if(elements.length>0){
+               var el = elements[0];//select first element in array
+               el.className='cool';
+           }
+        
+        
+        </script>
+        
+        
+    </body>
+   
+</html>

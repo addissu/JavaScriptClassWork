@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/c05.css">
+    </head>
+    <body>
+      <div id="page">
+        <h1>Get Element By last Name</h1>
+        <div id="page"> </div>
+        <h2>Buy groceries</h2>
+        <ul><li id="one" class="hot"><em>Fresh</em> Figs</li><li id="two" class="hot">Pine nuts</li><li id="three" class="hot">Honey</li><li id="four"  >Balsomic vineger</li></ul>
+    </div>      
+        
+        
+       <script>
+         
+           
+       //create new element
+           
+           
+           var newEl = document.CreateElement('li');
+           //create text node 
+           var newText = document.createTextNode('quinoe');
+           //attach new text node to new element 
+           newEl.appendChild(newText);
+           
+           //find the position to insert the new element
+           
+           var position = document.getElementByTagName('ul')[0];
+           //insert the new element into its 
+           position.appendChild(newEl);
+           
+           
+           
+        
+        </script>
+        
+        
+    </body>
+   
+</html>

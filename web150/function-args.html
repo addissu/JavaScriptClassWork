@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head></head>
+<body>
+    
+    
+    <div id="area"></div>
+    <div id="sizes"></div>
+    <script>
+  
+        function getArea(width,height){
+            var area = width * height;
+            return area;
+        }
+        
+       var area = getArea(12,15);
+       
+        var elArea = document.getElementById("area");
+        elArea.textContent = "area is " + area;
+        //return multiple values with an array
+        function getSize(width,height,depth){
+            //calculate area
+            var area = width * height;
+            var volume = width * height * depth;
+            //create an array to store results 
+            var sizes = [area, volume];
+            return sizes;
+            
+            
+        }
+        var areaOne=getSize(3,2,3)[0];
+        var volume = getSize(3,4,3)[1];
+        var elSizes = document.getElementById("sizes");
+        elSizes.textContent = "area is: " + area + "volume is " + volume;
+        
+        
+        
+        
+    </script>
+    
+     
+    
+</body>
+
+
+</html>

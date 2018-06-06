@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    <head>
+        <title>flicker api test</title>
+    <style>
+        html. body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #maps{
+            width: 400px;
+            height: 400px;
+            margin: 50px;
+            
+        }
+        
+    </style>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+         <script>
+           function init () {
+               var mapOptions = {
+               center: new google.maps.LatLng(47.555417,-122.279782),
+               
+               mapTypeId: google.maps.MapTypeId.ROADMAP, zoom:13
+           };
+             
+             var venueMap = new google.maps.Map(document.getElementById('maps'), mapOptions);
+           }
+        
+             function loadScript(){
+                 var script = document.createElement('script');
+                 script.src=' http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+                 document.body.appendChild(script);
+               
+
+             }
+               window.onload = loadScript;
+        
+        </script>
+        
+    </head>
+    
+    
+    <body>
+        <h2></h2>
+        
+     <div id="maps"></div>
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+    </body>
+   
+    
+    
+    
+</html>

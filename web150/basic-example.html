@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> jQuery examples  </title>
+        
+        <link rel="stylesheet" href="css/c07.css">
+</head>
+    <body>
+        <div id="page">
+            <h1 id="header"></h1>
+                <h2>Buy groceries</h2>
+        <ul>
+                <li id="one" class="hot"><em>fresh</em>Figs</li>
+                <li id="two" class="hot">Pine nuts</li>
+                <li id="three" class="hot">Honey</li>
+                <li id="four" > Vinegar</li>
+    </ul>
+    
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+        
+        <script>
+         //make sure that elements on page are loaded 
+            
+            $(function(){
+                //removes class three
+               $('li#three').removeClass('hot');
+                //adds class to li id hot and adds id favorite
+                $('li.hot').addClass ('favorite');
+                //selects ul adds id group from css 
+                $('ul').attr('id', 'group');
+                
+            });
+        
+        
+        
+        </script>
+    </body>
+
+
+
+</html>

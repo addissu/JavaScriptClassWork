@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/c05.css">
+    </head>
+    <body>
+      <div id="page">
+        <h1>Get Element By last Name</h1>
+        <div id="page"> </div>
+        <h2>Buy groceries</h2>
+        <ul><li id="one" class="hot"><em>Fresh</em> Figs</li><li id="two" class="hot">Pine nuts</li><li id="three" class="hot">Honey</li><li id="four"  >Balsomic vineger</li></ul>
+    </div>      
+        
+        
+       <script>
+       //select the starting points 
+           var startItem = document.GetElementById('two');
+           var prevItem = startItem.previousSibling;
+           var nextItem = startItem.nextSibling;
+           
+           
+           //change the values of the siblings class attributes 
+           prevItem.className = 'complete';
+           nextItem.className = 'cool';
+        
+        </script>
+        
+        
+    </body>
+   
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> jQuery examples  </title>
+        
+        <link rel="stylesheet" href="css/c07.css">
+</head>
+    <body>
+        <div id="page">
+            <h1 id="header"></h1>
+                <h2>Buy groceries</h2>
+        <ul>
+                <li id="one" class="hot"><em>fresh</em>Figs</li>
+                <li id="two" class="hot">Pine nuts</li>
+                <li id="three" class="hot">Honey</li>
+                <li id="four" > Vinegar</li>
+    </ul>
+    
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+        
+        <script>
+        
+            
+            $(function(){
+                 //get background color of the first list item 
+                
+                
+                var backgroundColor = $('li').css('background-color');
+                
+                //write background color to the page, after the list 
+                
+                $('ul').append('<p>Color was: ' + backgroundColor + '</p>');
+                
+                
+                //set several properties of all list items 
+                
+                $('li').css({
+                    
+                    'backgroundColor' : '#c5a996', 
+                    'border' : '1px solid #fff',
+                    'color ' : '#000',
+                    'text-shadow': 'none',
+                    'font-family' : 'Georgia',
+                    'padding-left' : '+=75'
+                });
+                
+                
+                
+            });
+        
+        
+        
+        </script>
+    </body>
+
+
+
+</html>

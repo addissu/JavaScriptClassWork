@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> document object </title>
+    </head>
+    <body>
+        <!-- h3 below-->
+        <h3>Travel world</h3>
+        <div id="info"></div>
+        
+        
+       <script >
+            var i=1;
+           var msg='';
+           
+           while( i<10){
+               msg+= i + 'x 5 ' + (i*5)+'<br>';
+               i++;
+           }
+           
+           document.getElementById('info').innerHTML = msg;
+        
+    </script>
+    </body>
+   
+</html>

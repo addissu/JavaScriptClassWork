@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+    </head>
+<body>
+    <div id="content">
+        <div id="title">Howdy <span id="name">friend</span></div>
+        <div id="note">Take a look around</div>
+        <script>
+            //prompt user for input
+            var userName = prompt("what is your user name", "enter your name");
+            var dis = prompt("do you like injera?");
+            
+            //create variables for name and message
+            var username = 'Addissu ';
+            var message = 'See our upcoming range';
+            
+            //get elements with id of name
+            var elName = document.getElementById('name');
+            //replace the content 
+            elName.textContent = username;
+            
+            var elNote = document.getElementById('note');
+            elNote.textContext= 'message';
+            
+            
+        </script>
+    </div>
+    
+</body>
+</html>

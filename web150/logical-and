@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+       
+        <!-- h3 below-->
+        <h3> switch statement 
+        </h3>
+        
+         <section id="answer">
+           
+            
+        </section>
+      <script > 
+            var level = 2;
+            var msg;
+                switch(level){
+                    case 1: 
+                        msg = "good luck on the test bruh";
+                        break;
+                    case 2: 
+                        msg = " you got it bruh";
+                        break;
+                    case 3: 
+                        msg = "you've gone too far";
+                        break;
+                    default: 
+                        msg="good luck";
+                        break;
+                }
+       var el = document.getElementById('answer');
+          el.textContent = msg;
+                       
+                         
+          
+        
+        </script>
+    </body>
+   
+</html>

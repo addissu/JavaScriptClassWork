@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/c05.css">
+    </head>
+    <body>
+      <div id="page">
+        <h1>Get Element By last Name</h1>
+        <div id="page"> </div>
+        <h2>Buy groceries</h2>
+        <ul><li id="one" class="hot"><em>Fresh</em> Figs</li><li id="two" class="hot">Pine nuts</li><li id="three" class="hot">Honey</li><li id="four"  >Balsomic vineger</li></ul>
+    </div>      
+        
+        
+       <script>
+           //select the second list item 
+           
+           var itemTwo = document.getElementById('two');
+           //get the text content of the node 
+           var elText = itemTwo.firstChild.nodeValue;
+            elText = elText.replace('Pine nuts', 'kale');
+           
+           itemTwo.firstChild.nodeValue = elText;
+           
+           
+           
+           
+           
+           var itemOne = document.getElementById('three');
+           //get the text content of the node 
+           var elText1 = itemOne.firstChild.nodeValue;
+           //what changes to replace and its new value
+            elText1 = elText1.replace('Honey', 'Injera');
+           
+           itemOne.firstChild.nodeValue = elText1;
+           
+           
+           
+        
+        </script>
+        
+        
+    </body>
+   
+</html>
